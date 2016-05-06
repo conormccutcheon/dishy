@@ -8,7 +8,11 @@ resources :restaurants do
 end
 
 resources :dishes
-resources :locations
+
+resources :locations do
+  resources :restaurants
+end
+
 resources :home
 
 
