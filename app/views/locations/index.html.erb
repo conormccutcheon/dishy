@@ -1,0 +1,9 @@
+<H1>Locations</H1>
+
+<ol>
+	<% @locations.each do |location| %>
+		<li>
+		<%= link_to location.area, location_path(location) %>
+		</li>
+	<%end%>
+</ol>

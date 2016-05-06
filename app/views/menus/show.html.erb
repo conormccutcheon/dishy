@@ -1,0 +1,7 @@
+<H1> Menu </H1>
+<H3> Dishes in <%=@menu.name%> </H3>
+<ul>
+	<% @dishes.each do |dish| %>
+		<li> <%= dish.name %> <%= dish.price %> </li>
+	<% end %>
+</ul>
